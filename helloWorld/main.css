@@ -1,6 +1,6 @@
-h1 {
+#heading {
   color: blue;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Oswald', sans-serif;
   text-align: center;
 }
 
@@ -10,8 +10,15 @@ p {
   text-align: center;
 }
 
+#daily-challenge {
+  color: rgb(66, 66, 66);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
 a {
-  color: aqua;
+  color: rgb(182, 55, 161);
   text-decoration: none;
 }
 
