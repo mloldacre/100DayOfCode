@@ -22,10 +22,21 @@ p, ol {
 
 .day {
   color: rgb(65, 47, 47);
+  /* margin: 20px; */
+  width: 30%;
+}
+
+.details {
+  background-color: darkolivegreen;
+  color: rgb(149, 162, 84);
+  padding: 50px 10px;
+  border-radius: 15px;
+}
+
+#week {
   list-style-type: lower-greek;
-  text-align: left;
-  margin: 20px;
-  margin-inline: 45% auto;
+  width: 50%;
+  margin-left: 42%;
 }
 
 #arrow {
