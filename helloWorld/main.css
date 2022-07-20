@@ -7,6 +7,7 @@ body {
 #heading {
   color: blue;
   font-family: 'Oswald', sans-serif;
+  margin-top: 100px;
 }
 
 .title {
@@ -31,6 +32,22 @@ p, ol {
   color: rgb(149, 162, 84);
   padding: 50px 10px;
   border-radius: 15px;
+}
+
+#main {
+  background-color: rgb(177, 96, 59);
+  border: 6px solid rgb(33, 33, 33);
+  border-radius: 7px;
+  width: 50%;
+  margin: 0 25%;
+}
+
+#main p {
+  font-size: 75px;
+}
+
+#main span {
+  color: darkgreen;
 }
 
 #week {
@@ -66,4 +83,7 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 100px;
+  border: 6px solid rgb(33, 33, 33);
+  position: relative;
+  top: 90px;
 }

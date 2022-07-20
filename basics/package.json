@@ -1,0 +1,14 @@
+{
+	"name": "basics",
+	"version": "1.0.0",
+	"description": "basic html challenge",
+	"main": "index.js",
+	"scripts": {
+		"sass": "node-sass main.scss style.css -w"
+	},
+	"author": "mloldacre",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^7.0.1"
+	}
+}
