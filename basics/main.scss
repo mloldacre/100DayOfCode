@@ -6,3 +6,20 @@ $color-special-font: #fee7d7;
 $color-selected-font: #2d0b51;
 $color-selected-background: #ffefb1;
 $color-btn: #f9c927;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	background-color: $color-background;
+	text-align: center;
+}
+
+#title {
+	color: $color-title;
+}
