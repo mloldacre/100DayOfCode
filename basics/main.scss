@@ -6,6 +6,7 @@ $color-special-font: #fee7d7;
 $color-selected-font: #2d0b51;
 $color-selected-background: #ffefb1;
 $color-btn: #f9c927;
+$color-btn-hover: #f9a527;
 
 *,
 *::after,
@@ -18,8 +19,42 @@ $color-btn: #f9c927;
 body {
 	background-color: $color-background;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-#title {
-	color: $color-title;
+#basics {
+	&__title {
+		color: $color-title;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	&__icon {
+		margin-bottom: 40px;
+		height: 15%;
+		width: 15%;
+	}
+
+	&__section {
+		display: inline-block;
+		height: 100px;
+		width: 100px;
+		margin-bottom: 100px;
+		background-color: $color-section-background;
+		border-radius: 5px;
+	}
+
+	&__btn {
+		background-color: $color-btn;
+		padding: 5px 20px;
+		border-radius: 5px;
+		color: rgb(26, 26, 26);
+		text-decoration: none;
+		&:hover {
+			background-color: $color-btn-hover;
+		}
+	}
 }
