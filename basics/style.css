@@ -7,35 +7,65 @@
 
 body {
   background-color: #f3e9ff;
-  text-align: center;
+  text-align: center; }
+
+#basics {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center; }
-
-#basics__title {
-  color: #603ac8;
-  margin-top: 20px;
-  margin-bottom: 50px; }
-
-#basics__icon {
-  margin-bottom: 40px;
-  height: 15%;
-  width: 15%; }
-
-#basics__section {
-  display: inline-block;
-  height: 100px;
-  width: 100px;
-  margin-bottom: 100px;
-  background-color: #774ad8;
-  border-radius: 5px; }
-
-#basics__btn {
-  background-color: #f9c927;
-  padding: 5px 20px;
-  border-radius: 5px;
-  color: #1a1a1a;
-  text-decoration: none; }
-  #basics__btn:hover {
-    background-color: #f9a527; }
+  #basics__title {
+    color: #603ac8;
+    margin-top: 20px;
+    margin-bottom: 50px; }
+  #basics__icon {
+    margin-bottom: 40px;
+    height: 13%;
+    width: 13%; }
+  #basics .special {
+    color: #fef06f;
+    border-left: 5px solid #fef06f; }
+  #basics .space {
+    padding-left: 25px; }
+  #basics__section {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: left;
+    text-align: left;
+    height: 100%;
+    width: 60%;
+    margin-bottom: 100px;
+    padding: 40px 20px;
+    background-color: #774ad8;
+    border-radius: 5px;
+    color: #f3e9ff; }
+    #basics__section--heading, #basics__section--htmlText {
+      padding-bottom: 10px; }
+    #basics__section--list {
+      list-style-type: none;
+      margin-bottom: 10px; }
+      #basics__section--list-item {
+        margin-bottom: 10px;
+        padding-left: 20px; }
+    #basics__section--reference {
+      margin-bottom: 30px; }
+      #basics__section--reference-link {
+        background-color: #ffefb1;
+        padding: 5px 5px;
+        border-radius: 5px;
+        color: #2d0b51;
+        text-decoration: none; }
+        #basics__section--reference-link:hover {
+          background-color: #fbdc60; }
+  #basics__btn {
+    background-color: #f9c927;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #1a1a1a;
+    text-decoration: none; }
+    #basics__btn:hover {
+      background-color: #f9a527; }
+  #basics__footer {
+    margin: 30px 0; }

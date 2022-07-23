@@ -2,9 +2,10 @@ $color-background: #f3e9ff;
 $color-title: #603ac8;
 $color-section-background: #774ad8;
 $color-font: #fff2fe;
-$color-special-font: #fee7d7;
+$color-special-font: #fef06f;
 $color-selected-font: #2d0b51;
 $color-selected-background: #ffefb1;
+$color-selected-background-hover: #fbdc60;
 $color-btn: #f9c927;
 $color-btn-hover: #f9a527;
 
@@ -19,13 +20,15 @@ $color-btn-hover: #f9a527;
 body {
 	background-color: $color-background;
 	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 
 #basics {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+
 	&__title {
 		color: $color-title;
 		margin-top: 20px;
@@ -34,17 +37,60 @@ body {
 
 	&__icon {
 		margin-bottom: 40px;
-		height: 15%;
-		width: 15%;
+		height: 13%;
+		width: 13%;
+	}
+
+	.special {
+		color: $color-special-font;
+		border-left: 5px solid $color-special-font;
+	}
+
+	.space {
+		padding-left: 25px;
 	}
 
 	&__section {
-		display: inline-block;
-		height: 100px;
-		width: 100px;
+		display: flex;
+		flex-direction: column;
+		align-content: flex-end;
+		justify-content: left;
+		text-align: left;
+		height: 100%;
+		width: 60%;
 		margin-bottom: 100px;
+		padding: 40px 20px;
 		background-color: $color-section-background;
 		border-radius: 5px;
+		color: $color-background;
+
+		&--heading,
+		&--htmlText {
+			padding-bottom: 10px;
+		}
+
+		&--list {
+			list-style-type: none;
+			margin-bottom: 10px;
+			&-item {
+				margin-bottom: 10px;
+				padding-left: 20px;
+			}
+		}
+
+		&--reference {
+			margin-bottom: 30px;
+			&-link {
+				background-color: $color-selected-background;
+				padding: 5px 5px;
+				border-radius: 5px;
+				color: $color-selected-font;
+				text-decoration: none;
+				&:hover {
+					background-color: $color-selected-background-hover;
+				}
+			}
+		}
 	}
 
 	&__btn {
@@ -56,5 +102,9 @@ body {
 		&:hover {
 			background-color: $color-btn-hover;
 		}
+	}
+
+	&__footer {
+		margin: 30px 0;
 	}
 }
