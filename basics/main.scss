@@ -9,6 +9,8 @@ $color-selected-background-hover: #fbdc60;
 $color-btn: #f9c927;
 $color-btn-hover: #f9a527;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
 *,
 *::after,
 *::before {
@@ -33,6 +35,8 @@ body {
 		color: $color-title;
 		margin-top: 20px;
 		margin-bottom: 50px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
 	}
 
 	&__icon {
@@ -63,15 +67,22 @@ body {
 		background-color: $color-section-background;
 		border-radius: 5px;
 		color: $color-background;
+		font-family: 'Roboto', sans-serif;
+
+		&--heading {
+			font-weight: 900;
+		}
 
 		&--heading,
-		&--htmlText {
+		&--htmlText,
+		&--cssText {
 			padding-bottom: 10px;
 		}
 
 		&--list {
 			list-style-type: none;
 			margin-bottom: 10px;
+			font-weight: 400;
 			&-item {
 				margin-bottom: 10px;
 				padding-left: 20px;
@@ -80,6 +91,7 @@ body {
 
 		&--reference {
 			margin-bottom: 30px;
+			font-weight: 400;
 			&-link {
 				background-color: $color-selected-background;
 				padding: 5px 5px;
