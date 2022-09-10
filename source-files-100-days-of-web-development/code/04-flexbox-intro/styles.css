@@ -7,6 +7,11 @@
   justify-content: space-between;
 }
 
+#nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
 p {
   background-color: rgb(211, 88, 209);
   margin: 10px;
@@ -24,4 +29,6 @@ ul {
 li {
   background-color: rgb(238, 212, 192);
   width: 100px;
+  padding-left: 10px;
+  tex text-align: right;
 }
